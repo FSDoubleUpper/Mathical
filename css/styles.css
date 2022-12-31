@@ -14,12 +14,17 @@ body {
   "main"
   "footer";
   height: 100vh;
+  background-color:steelblue;
 }
 @keyframes title-load {
   0%, 100% { color: white; }
   25% { opacity: 0; color: red; }
   50% { color: blue; }
   75% { opacity: 1; color: green; }
+}
+
+:root {
+  --check: 2px dashed red;
 }
 
 /* || TITLE */
@@ -38,13 +43,21 @@ h1 {
 /*all*/
 #submitStart, #btnStartOver {
   border: none;
+  color: white;
+  background-color:darkgreen;
   cursor: pointer;
   text-align: center;
 }
+
 /*settings*/
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   align-self: start;
   margin: 0 auto;
+  width: 100%;
 }
 form {
   width: 90vw;
@@ -60,20 +73,19 @@ form {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr;
   list-style-type: none;
-  margin: 40px auto;
-  padding: 0;
+  margin: auto;
 }
 #answers ul li {
   background-color: rgb(49, 49, 49);
+  color: white;
   border-radius: 50px;
   cursor: pointer;
-  margin: 5px;
-  padding: 20px 30px;
+  margin: 5% 10%;
+  padding: 10%;
   text-align: center;
   transition: background-color ease-in-out .5s;
 }
 button {
-  background-color: #ABD587;
   border: 0px;
   border-radius: 4px;
   display: block;
@@ -83,15 +95,8 @@ button {
   text-transform: uppercase;
 }
 #submitStart {
-  background-color: rgb(43, 47, 71);
   border-radius: 25px;
   font-size: 1.5em;
-  margin-top: 25px;
-}
-#btnStartOver {
-  left: 50%;
-  margin: 0;
-  transform: translate(-50%, 0);
 }
 
 /* || FOOTER */
@@ -130,18 +135,13 @@ main {
   font-size: 1.5em;
 }
 #btnStartOver:hover {
-  background-color: rgb(17, 86, 17);
-  color: white;
   font-size: 1.5em;
   min-width: auto;
 }
 #btnStartOver {
-  background-color: rgb(34, 45, 34);
   border-radius: 50px;
-  color: rgb(154, 154, 154);
   font-family: 'Russo One', sans-serif;
   font-size: 1em;
-  position: absolute;
   transition: 
     background-color ease-in-out .5s,
     color ease-in-out .5s,
@@ -164,21 +164,12 @@ main {
     text-align: center;
     width: 100vw;
   }
-  #answers ul {
-    font-size: 2em;
-    height: 50%;
+
+  ul {
+    max-width: 1000px;
   }
-  #answers ul li {
-    padding: 10% 0;
-  }
-  #answers ul li:hover {
-    background-color: rgb(0, 134, 11);
-  }
-  #submitStart:hover {
-    background-color: rgb(31, 61, 151);
-    font-size: 1.75em;
-    transition:
-      background-color ease-in-out .5s,
-      font-size ease-in-out .5s;
+
+  .settings form {
+    margin: auto;
   }
 }

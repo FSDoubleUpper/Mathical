@@ -20,11 +20,11 @@
     <section class="settings">
       <form>
         <div>
-          <label for="maxProb">How many problems would you like to solve?</label>
+          <label for="maxProb">How many equations would you like to solve?</label>
           <input type="text" id="maxProb" name="maxProb" placeholder="10">
         </div>
         <div>
-          <label for="maxValue">What is the max numeral limit you would like to set?</label>
+          <label for="maxValue">What is the largest integer you would like to set?</label>
           <input type="text" id="maxValue" name="maxValue" placeholder="10">
         </div>
         <div>
@@ -42,10 +42,11 @@
 
     <section id="problem">
       <div class="expression show-hide"></div>
-      <p>
+      <div>
         Problem: <span class="currentProblem">1</span>/<span class="totalProblem">10</span> | Score: <span class="currentScore">0</span>
-      </p>
+      </div>
     </section>
+
     <section id="answers" class="show-hide">
       <ul>
         <li></li>
@@ -54,8 +55,10 @@
         <li></li>
       </ul>
     </section>
+
       <button id="btnStartOver" class="hide">Start Over</button>
   </main>
+  
   <footer>
     <small>Copyright &copy; 2022 YFL. All Rights Reserved.</small>
   </footer>
