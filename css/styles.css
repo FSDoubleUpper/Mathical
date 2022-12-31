@@ -71,7 +71,6 @@ form {
 }
 #answers {
   width: 100%;
-  border: var(--check);
 }
 #answers ul {
   display: grid;
