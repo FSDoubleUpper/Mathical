@@ -47,6 +47,7 @@ h1 {
   background-color:darkgreen;
   cursor: pointer;
   text-align: center;
+  padding: 10px 20px;
 }
 
 /*settings*/
@@ -156,6 +157,7 @@ form {
 }
 
 @media only screen and (min-width: 768px) {
+
   /* || TITLE */
   h1 {
     font-size: 10em;
@@ -166,6 +168,27 @@ form {
     height: 100%;
     text-align: center;
     width: 100vw;
+  }
+
+  #submitStart, #btnStartOver {
+    background-color:rgb(73, 88, 116);
+    transition: 
+    background-color ease-in-out .5s, 
+    color ease-in-out .5s, 
+    font-size ease-in-out .5s;
+  }
+  
+  #submitStart:hover, #btnStartOver:hover {
+    font-size: 1.6em;
+    background-color: green;
+  }
+
+  #answers li:hover {
+    background-color: green;
+  }
+
+  .settings-form {
+    justify-content: space-evenly;
   }
 
   ul {
